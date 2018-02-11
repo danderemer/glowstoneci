@@ -16,8 +16,7 @@ node {
             junit 'target/surefire-reports/**/*.xml'
           }
     stage('Analysis') {
-        def checkstyle = scanForIssues tool: [$class: 'CheckStyle'], pattern: 'target/checkstyle-result.xml'
-        publishIssues issues:[checkstyle], useStableBuildAsReference: true
+        step([$class: 'CheckStylePublisher', pattern: 'target/checkstyle-result.xml'])
     }
 
 }
