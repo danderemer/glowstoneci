@@ -14,7 +14,7 @@ This glowstoneci project is demonstration of my ability to construct a build pip
 
 ## Execution
 
-Steps to create the build process for Glowstone can be found under [./docs/runbook.md](https://github.com/danderemer/glowstoneci/blob/master/docs/runbook.md)
+A runbook containing the steps to reproduce this work under [./docs/runbook.md](https://github.com/danderemer/glowstoneci/blob/master/docs/runbook.md)
 
 ## Callouts
 
@@ -33,8 +33,8 @@ Steps to create the build process for Glowstone can be found under [./docs/runbo
 ## Opportunities for Improvement
 
 1. Automate installation and configuration of Jenkins.
-    * Including (and not limited to) plugin installation, global configuration settings, and LDAP user authentication using an enterprise LDAP solution.
-        * Automation to be provided in Ansible (preferably).
+    * Including plugin installation, global configuration settings, and LDAP user authentication using an enterprise LDAP solution.
+        * Automation/orchestration to be done using Ansible or Puppet.
 
 2. Implement Jenkins as a scalable microservice.
 
